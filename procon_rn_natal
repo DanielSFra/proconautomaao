@@ -1,0 +1,15 @@
+import pyautogui
+import time  
+
+pyautogui.PAUSE = 0.3
+
+pyautogui.press("win")
+pyautogui.write("chrome")
+pyautogui.press("enter")
+
+time.sleep(1)
+pyautogui.write("https://bloqueiotelmkt.natal.rn.gov.br/telefone/listaConsolidada.php")
+pyautogui.press("enter")
+time.sleep(3)
+#clicando no botão de download
+pyautogui.click(x=733, y=476)
