@@ -1,0 +1,39 @@
+import pyautogui
+import time  
+
+pyautogui.PAUSE = 0.3
+
+pyautogui.press("win")
+pyautogui.write("chrome")
+pyautogui.press("enter")
+
+time.sleep(1)
+pyautogui.write("https://bloqueiotelemarketing.procon.sc.gov.br/empresaTelemarketing")
+pyautogui.press("enter")
+time.sleep(3)
+pyautogui.click(x=576, y=493)
+pyautogui.write("05391009000194")
+pyautogui.press("tab")
+time.sleep(3)
+
+#se vazio preenche05391009000194   
+#pyautogui.click(x=594, y=707)
+#pyautogui.write("F3cSKC")
+#pyautogui.press("tab")
+#time.sleep(3)
+
+#segunda tela
+pyautogui.click(x=612, y=766)
+pyautogui.press("enter")
+time.sleep(3)
+
+#terceira tela
+pyautogui.click(x=481, y=420)
+time.sleep(3)
+
+pyautogui.click(x=478, y=381)
+time.sleep(5)
+
+#Botão Manter
+#pyautogui.click()
+#time.sleep()
