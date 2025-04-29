@@ -1,0 +1,42 @@
+import pyautogui
+import time  
+
+pyautogui.PAUSE = 0.3   
+
+pyautogui.press("win")
+pyautogui.write("chrome")
+pyautogui.press("enter")    
+
+time.sleep(3)
+pyautogui.write("https://naoperturbe.procon.pb.gov.br/login")
+pyautogui.press("enter")
+time.sleep(3)
+    
+#digitando o email 
+pyautogui.click(x=852, y=437)
+#pyautogui.write("suporte@abstract.com.br")
+pyautogui.press("tab")
+time.sleep(3)
+
+#digitando a senha
+pyautogui.click(x=850, y=512)   
+pyautogui.press("tab")  
+time.sleep(3)
+#pyautogui.write("Digital@23")
+#time.sleep(3)  
+
+#clicando no caixa de seleção
+pyautogui.click(x=817, y=570)
+time.sleep(3)
+#clicando no botão
+pyautogui.click(x=974, y=657)
+time.sleep(3)
+
+#clicando no listagem
+pyautogui.click(x=1790, y=150)
+time.sleep(3)
+
+#clicando no botão listagem csv 
+pyautogui.click(x=733, y=547)
+time.sleep(3)
+    
