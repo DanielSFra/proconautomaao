@@ -1,0 +1,46 @@
+import pyautogui
+import time  
+
+pyautogui.PAUSE = 0.3
+
+pyautogui.press("win")
+pyautogui.write("chrome")
+pyautogui.press("enter")
+
+time.sleep(3)
+
+pyautogui.write("https://naoperturbe.itec.al.gov.br/")
+pyautogui.press("enter")
+time.sleep(3)
+
+#campo login https://naoperturbe.itec.al.gov.br/
+pyautogui.click(x=578, y=490)
+# Seleciona todo o texto
+pyautogui.hotkey('ctrl', 'a')  
+time.sleep(5)
+# Apaga o texto selecionado
+pyautogui.press('delete')
+pyautogui.write("05391009000194")
+pyautogui.press("tab")
+time.sleep(3)
+#campo senha
+pyautogui.click(x=572, y=543)
+pyautogui.write("k@sJvD4")
+pyautogui.press("tab")
+time.sleep(3)
+#clicar no botão acessar
+pyautogui.click(x=707, y=633)
+time.sleep(3)
+#segunda tela    
+#botão selecionar
+pyautogui.click (x=1029, y=552)
+time.sleep(3)
+
+#selecionar o tipo de arquivo   
+pyautogui.click(x=975, y=624)
+time.sleep(3)
+
+#botão gerar lista
+pyautogui.click(x=1096, y=549)
+time.sleep(5)
+
