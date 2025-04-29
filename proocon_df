@@ -1,0 +1,47 @@
+import pyautogui
+import time  
+
+pyautogui.PAUSE = 0.3
+
+pyautogui.press("win")
+pyautogui.write("chrome")
+pyautogui.press("enter")
+
+time.sleep(3)
+pyautogui.write("https://merespeite.procon.df.gov.br/")
+pyautogui.press("enter")
+time.sleep(3)
+pyautogui.click(x=811, y=379)
+time.sleep(3)
+
+#tela fornecedor
+#clicando na caixa de seleção
+
+pyautogui.click(x=821, y=789)
+time.sleep(3)
+
+#clicar no botão de seleção
+#pyautogui.click()
+#time.sleep(3)
+
+
+#pyautogui.click(x=911, y=370)
+#pyautogui.write("05391009000194")
+#pyautogui.press("tab")
+#time.sleep(3)
+
+#pyautogui.write("h&TC#5yS")
+#pyautogui.press("tab")
+#time.sleep(3)
+#clicando no botão
+pyautogui.click(x=941, y=873)
+time.sleep(3)
+
+# tela 3
+# clicando no botão de Download
+pyautogui.click(x=664, y=662)
+#time.sleep(3)
+
+
+
+
