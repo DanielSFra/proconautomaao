@@ -1,0 +1,33 @@
+import pyautogui
+import time
+
+pyautogui.PAUSE = 0.3
+
+pyautogui.press("win")
+pyautogui.write("chrome")
+pyautogui.press("enter")
+time.sleep(1)
+
+
+pyautogui.write("http://wapp.mpce.mp.br/DeconAntiMarketing/visao/con_Telefones.aspx")
+pyautogui.press("enter")
+time.sleep(7)
+pyautogui.click(x=704, y=435)
+
+# Seleciona todo o texto
+pyautogui.hotkey('ctrl', 'a')  
+time.sleep(5)
+# Apaga o texto selecionado
+pyautogui.press('delete')  
+# muda o texto selecionado para o padrão
+pyautogui.write("01/01/2000")
+time.sleep(3)
+
+# clica no Botão buscar
+pyautogui.click(x=1227, y=421)
+time.sleep(3)
+
+pyautogui.click(x=550, y=498)
+time.sleep(3)
+pyautogui.click(1589, y=128)
+time.sleep(5)
